@@ -111,6 +111,16 @@
     </div>
   </footer>
 
+  <script>
+  // Tutup menu hamburger setelah klik navigasi
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('toggle-nav').checked = false;
+    });
+  });
+</script>
+
+
 </body>
 
 </html>
